@@ -241,34 +241,30 @@
               justify-content: center;
               align-items: center;
           }
-      }
-      /* empresa*/
-      /* nuestros activos*/
-      
-      .screen-actives {
-          padding-top: 200px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-      }
-      /* novedades*/
-      
-      .screen-news {
-          padding-top: 200px;
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: space-between;
-          align-items: stretch;
-          align-content: space-around;
-      }
-      
-      .screen-news div {
-          padding: 80px;
-          width: 33.3%;
-      }
-      /* contacto*/
-      
-      .screen-contact {
-          padding: 200px;
+          #main-news {
+              grid-template-columns: 100%;
+              grid-template-rows: 100px 60% 25%;
+              grid-template-areas: "header" "screen-news" "footer";
+              grid-row: 0px;
+          }
+          .screen-news {
+              padding-top: 200px;
+              flex-flow: row wrap;
+              justify-content: space-between;
+              align-items: stretch;
+              align-content: space-around;
+          }
+          .screen-news div {
+              padding: 80px;
+              width: 33.3%;
+          }
+          #main-contact {
+              grid-template-columns: 100%;
+              grid-template-rows: 100px 60% 25%;
+              grid-template-areas: "header" "screen-contact" "footer";
+              grid-row: 0px;
+          }
+          .screen-contact {
+              padding: 200px;
+          }
       }
